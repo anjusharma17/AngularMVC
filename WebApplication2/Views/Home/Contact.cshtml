@@ -1,0 +1,19 @@
+﻿@section Scripts{
+    <script src="~/StudentClient.js"></script>
+}
+
+<div ng-app="StudentApp" class="container">
+    <br />
+    <br />
+    <input type="text" placeholder="Search Student" ng-model="searchStudent" />
+    <br />
+    <div ng-controller="StudentController">
+        <table class="table">
+            <tr ng-repeat="r in students">
+                <td>{{r.PersonID}}td>
+                <td>{{r.FirstName}}td>
+                <td>{{r.LastName}}td>
+            </tr>
+        </table>
+    </div>
+</div>
